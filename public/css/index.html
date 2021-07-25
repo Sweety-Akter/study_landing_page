@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Landing Page</title>
+
+    <!----------- css links ---------->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!------- header ------->
+  <header class="bg-yellow-300 px-10 py-8">
+    <nav class="container mx-auto flex flex-row justify-between items-center">
+      <div class="text-4xl">LogoPack</div>
+      <div>
+        <a class="ml-10 text-lg font-semibold hover:text-white" href="#">Portfolio</a>
+        <a class="ml-10 text-lg font-semibold hover:text-white" href="#">About</a>
+        <a class="ml-10 text-lg font-semibold hover:text-white" href="#">Contact me</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+     <!------- hero ------->
+    <div class="container mx-auto flex flex-row justify-between items-center">
+      <div class="flex flex-col flex-1 px-5">
+        <h1 class="text-5xl font-bold">I build awesome experience</h1>
+        <p class="my-10 text-lg">I'm a Web Developer | UI & UX Designer</p>
+        <a href="#" class="cursor-pointer w-max bg-yellow-300 text-black py-3 px-4 uppercase font-semibold rounded-full" >Check out my work</a>
+      </div>
+      <div class="flex-1">
+        <img class="w-full" src="./imgs/hero_img.jpg" alt="">
+      </div>
+    </div>
+
+    <!------------ portfolio ------------>
+    <div class="container mx-auto px-10 my-20">
+      <h2 class="text-4xl mb-8">Portfolio</h2>
+      <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit eius fuga corporis deserunt repellat, deleniti ipsa consequuntur dolorem exercitationem! Debitis nobis, natus provident temporibus quia asperiores esse hic repellendus dolores fugit, perspiciatis assumenda pariatur.</p>
+      <div class="grid grid-cols-2 gap-10 my-8">
+        <div class="col-span-1 py-8 px-10">
+          <img class="w-495 h-285 rounded mx-auto" src="./imgs/book-with-green-board-background.jpg">
+        </div>
+        <div class="col-span-1 py-8 px-10">
+          <img class="w-495 h-285 rounded mx-auto" src="./imgs/2806451.jpg">
+        </div>
+      </div>
+    </div>
+
+    <!--------- about ------->
+    <div class="container mx-auto p-10">
+       <h2 class="text-4xl">About</h2>
+       <p class="mt-6 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, velit! Maiores eaque voluptates deserunt, rerum expedita omnis incidunt nihil tenetur sunt id voluptatum recusandae, corporis velit maxime totam molestias quaerat?</p>
+       <div class="flex flex-row items-left my-10 pr-0 lg:pr-20">
+        <div class="flex-1">
+          <img class="rounded mx-auto" src="./imgs/download (3).jpg">
+        </div>
+        <div class="flex-1 mt-2">
+          <p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus asperiores deleniti amet facilis ullam eligendi rerum magni illum labore nulla sunt non optio dicta, placeat earum repellat ut, possimus tenetur. Exercitationem dolores, sequi laborum perferendis minima aut quo consequuntur earum ducimus culpa quidem repellendus temporibus vitae.</p>
+        </div>
+       </div>
+    </div>
+
+    <!---------- contact ----------->
+    <div class="container mx-auto px-10 pt-20">
+      <h2 class="text-4xl">Contact</h2>
+      <p class="mt-6 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, velit! Maiores eaque voluptates deserunt, rerum expedita omnis incidunt nihil tenetur sunt id voluptatum recusandae, corporis velit maxime totam molestias quaerat?</p>
+      <form action="" method="POST" class="grid grid-cols-2 gap-4 mt-20 mb-10">
+        <label for="email" class="col-span-1">
+          <input type="text" name="email" placeholder="Email"
+           class="bg-gray-300 border-b-2 border-gray-400 border-solid w-full p-4">
+        </label> 
+        <label for="pot" class="col-span-1">
+          <input type="text" name="pot">
+        </label>
+        <label for="username" class="col-span-1">
+          <input type="text" name="username" placeholder="Username"
+           class="bg-gray-300 border-b-2 border-gray-400 border-solid w-full p-4">
+        </label> 
+        <label for="password" class="col-span-1">
+          <input type="password" name="password" placeholder="Password"
+           class="bg-gray-300 border-b-2 border-gray-400 border-solid w-full p-4">
+        </label>
+        <label for="textarea" class="col-span-2">
+          <textarea name="message" value="Message" id="" cols="30" rows="10"
+          class="bg-gray-300 border-b-2 border-gray-400 border-solid w-full">
+
+          </textarea>
+        </label>
+        <button class="col-span-2 bg-yellow-300 text-center p-4 text-black cursor-pointer" type="submit">
+          Contact me now
+        </button>
+      </form>
+    </div>
+
+  </main>
+</body>
+</html>
